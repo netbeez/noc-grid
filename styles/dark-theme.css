@@ -1,0 +1,16 @@
+
+/* Dark Theme */
+
+body {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+.dashboard-header {
+    border-color: #333333;
+}
+
+.grid-cell.null {
+    background-color: #222222;
+}
+
