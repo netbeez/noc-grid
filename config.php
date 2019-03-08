@@ -1,13 +1,17 @@
 <?php
 
+/**
+ * Configurations for your NOC Grid
+ */
+
 //Optional error display for debugging (set to false for production)
 ini_set( "display_errors", false);
 
 //Name of the dashboard instance location
 define("DASHBOARD_LOCATION_NAME", "Your Location");
 
-//Enter the root URL path for the dashboard instance
-define("ABS_PATH", "/");
+//The URL path for the dashboard instance
+define("URL_PATH", $_SERVER['REQUEST_URI']);
 
 //The host address of the NetBeez API (this is usually your NB dashboard's hostname)
 define("API_HOST", "<YOUR_NETBEEZ_HOSTNAME>");
@@ -26,4 +30,4 @@ define("SSL_VERIFY_HOST", false);
 define("SSL_VERIFY_PEER", false);
 
 //Boolean setting to enable or disable the alternate dark theme
-define("DARK_THEME_ENABLED", true);
+define("DARK_THEME_ENABLED", false);

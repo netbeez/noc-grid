@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Allison
- * Date: 6/19/2018
- * Time: 3:31 PM
+ * Functions
  */
 
 /**
@@ -28,9 +25,9 @@ function footer_scripts(){
     <script type="text/javascript">
         $(function() {
 
-            var realData = <?php echo $grid_data_obj; ?>;
+            let gridData = <?php echo $grid_data_obj; ?>;
 
-            var grid = new Grid(realData, $(".grid-table-container"));
+            let grid = new Grid(gridData, $(".grid-table-container"));
 
         });
 

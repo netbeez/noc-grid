@@ -1,8 +1,6 @@
 /**
- * Created by Allison on 6/25/2018.
+ * The Grid
  */
-
-//import '/lib/d3.min.js';
 
 class Grid {
     constructor(data, container){
@@ -38,7 +36,6 @@ class Grid {
             .append("div")
             .attr("class", "grid-label grid-label-45")
             .text((d) => {
-                console.log(d);
                 return d;
             });
 
@@ -70,22 +67,20 @@ class Grid {
 
     sort(data){
 
-        var agentFailCounts = getAgentFailCounts(this.agentIds);
+        let agentFailCounts = getAgentFailCounts(this.agentIds);
 
         function agentFailStatusCountById(agent_id){
-            var failCount = 0;
-            var maintenanceCount = 0;
-            var unknownCount = 0;
-            var cellCount = 0;
-            //console.log(data.length);
+            let failCount = 0;
+            let maintenanceCount = 0;
+            let unknownCount = 0;
+            let cellCount = 0;
+
             _.each(data, (row) => {
-                var cell = _.find(row, (cell) => {
+                let cell = _.find(row, (cell) => {
                     return cell.agent_id === agent_id;
                 });
 
                 if(cell.status != "null"){
-                    //console.log(cell);
-                    //console.log(cell.status);
                     cellCount++;
                 }
 
@@ -98,35 +93,30 @@ class Grid {
                 }
             });
 
-            //console.log(cellCount, maintenanceCount, unknownCount);
-
             if(failCount === 0){
-                if(maintenanceCount == cellCount){
+                if(maintenanceCount === cellCount){
                     failCount = -3;
-                } else if(unknownCount == cellCount || unknownCount == cellCount - maintenanceCount){
+                } else if(unknownCount === cellCount || unknownCount === cellCount - maintenanceCount){
                     failCount = -2;
                 }
             }
 
-            //console.log(failCount);
             return failCount;
         }
 
         function getAgentFailCounts(keys){
-            var failCountObj = {};
+            let failCountObj = {};
             _.each(keys, (key) => {
                 failCountObj[key] = agentFailStatusCountById(key);
             });
-            console.log(failCountObj);
             return failCountObj;
         }
 
         function failStatusTargetCount(row){
-            var failCount = 0;
-            var maintenanceCount = 0;
-            var cellCount = 0;
+            let failCount = 0;
+            let maintenanceCount = 0;
+            let cellCount = 0;
             _.each(row, (d) => {
-                //console.log(d);
                 if(d.status != "null"){
                     cellCount++;
                 }
@@ -140,19 +130,12 @@ class Grid {
                 }
             });
 
-            console.log(maintenanceCount);
-
-            /*if(failCount === 0 && maintenanceCount > 0){
-                failCount = -1;
-            }*/
-
             if (maintenanceCount === cellCount){
                 failCount = -1;
             }
 
             return failCount;
         }
-
 
         _.each(data, (d) => {
             d.sort((a, b) => {
@@ -166,16 +149,13 @@ class Grid {
     }
 
     getAgentKeys(data){
-        console.log(data);
         return d3.map(data[0], (d) => {
-            /*console.log(d.agent_name);
             if(d.agent_name){
                 return d.agent_name;
             } else {
                 return d.agent_id;
-            }*/
-            return d.agent_name + " " + d.agent_id;
-            //return d.agent_name;
+            }
+            //return d.agent_name + " " + d.agent_id; //Use instead if there are agents with missing or duplicate names
         }).keys();
     }
 

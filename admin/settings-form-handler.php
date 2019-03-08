@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Allison
- * Date: 6/20/2018
- * Time: 3:48 PM
+ * Form Handler for Admin Settings
  */
 
 $settings_data = file_get_contents('settings.json');

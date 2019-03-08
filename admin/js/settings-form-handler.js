@@ -1,5 +1,5 @@
 /**
- * Created by Allison on 6/21/2018.
+ * Client Side Form Handler
  */
 
 $(function() {

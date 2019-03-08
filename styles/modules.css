@@ -6,11 +6,6 @@
 	position: relative;
 }
 
-/*.grid-table-container,
-.grid-table thead {
-	background-color: #ffffff;
-}*/
-
 .grid-table {
 	width: auto;
 	border: none;
@@ -96,7 +91,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	display: block;
-	/*background-color: #ffffff;*/
 	-webkit-transform: rotate(-45deg) translate3d( 0, 0, 0);
 	-webkit-transform-origin: 0 0;
 	-moz-transform: rotate(-45deg);

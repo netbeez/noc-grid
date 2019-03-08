@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Allison
- * Date: 6/11/2018
- * Time: 9:29 AM
+ * Admin Main Index
  */
 
 require("../config.php");

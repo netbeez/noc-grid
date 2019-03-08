@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Allison
- * Date: 6/22/2018
- * Time: 10:19 AM
+ * Process Data for Grid
  */
 
 class Process_Grid_Data {

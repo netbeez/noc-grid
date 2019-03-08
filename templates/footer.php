@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Allison
- * Date: 6/19/2018
- * Time: 3:41 PM
+ * Footer Template
  */
 
 ?>
