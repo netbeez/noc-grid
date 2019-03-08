@@ -165,34 +165,27 @@
     position: fixed;
     top: 0;
     display:none;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #column-fixed {
 	position: absolute;
 	left: 0;
 	display: none;
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .grid-view-table thead {
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 
 /* - - - Search/Select & Agent Select Module - - - */
 
 
-.selection-module,
-.single-item-selection-module {
+.selection-module {
     font-size: 0;
     min-width: 520px;
-    /*border: 1px solid #f0f0f0;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0, 0.35);*/
-}
-
-.form-row .selection-module {
-    /*margin-bottom: 12px;*/
 }
 
 .selection-widget-container,
@@ -207,10 +200,6 @@
 .selection-widget {
     padding: 8px;
     position: relative;
-}
-
-.single-item-selection-module .selection-widget {
-    min-height: 100px;
 }
 
 .selection-widget.groups,
@@ -296,17 +285,9 @@
     background-color: #ffffff;
 }
 
-.single-item-selection-module .selection-list-container {
-    min-height: 30px;
-}
-
 .selection-list {
     list-style: none outside none;
     margin: 0;
-}
-
-.single-item-selection-module .selection-list {
-    padding-bottom: 0!important;
 }
 
 .selection-list.selected-items-list {
@@ -407,17 +388,6 @@
 
 .selection-list-item .fa-circle {
     padding: 1px 4px 1px 2px;
-}
-
-
-/* temporary hack for filter label appearing on single column agent list */
-
-#agents-selection-column-widget .title {
-    display: none;
-}
-
-.maintenance-status-active {
-    /*background-color: #f7f7f7;*/
 }
 
 .maintenance-status-toggle {

@@ -16,3 +16,8 @@ body {
     background-color: #222222;
 }
 
+#header-fixed,
+#column-fixed,
+.grid-view-table thead {
+    background-color: #000000;
+}

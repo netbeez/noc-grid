@@ -568,7 +568,7 @@ button,
 }
 
 .button:first-child {
-  *margin-left: 0;
+    margin-left: 0;
 }
 
 .button + .button {
@@ -756,15 +756,6 @@ textarea, select, select[multiple] {
 	height: 30px;
 }
 
-input[type="text"].input-number {
-	width: 80px;
-}
-
-input[type="text"].input-short,
-select.input-short {
-	width: 60px;
-}
-
 select.width-auto {
 	width: auto;
 	min-width: 200px;
@@ -797,6 +788,3 @@ textarea {
 	width: auto;
 	margin: 2px 0;
 }
-
-
-

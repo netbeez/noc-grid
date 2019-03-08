@@ -14,7 +14,7 @@ define("DASHBOARD_LOCATION_NAME", "Your Location");
 define("URL_PATH", $_SERVER['REQUEST_URI']);
 
 //The host address of the NetBeez API (this is usually your NB dashboard's hostname)
-define("API_HOST", "<YOUR_NETBEEZ_HOSTNAME>");
+define("API_HOST", "YOUR_NETBEEZ_HOSTNAME");
 
 //The NetBeez API version
 define("API_VERSION", "v1");

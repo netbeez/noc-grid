@@ -11,8 +11,6 @@
     <meta charset="UTF-8">
     <title><?php echo get_page_title(true); ?></title>
 
-    <!-- <?php echo URL_PATH; ?> -->
-
     <link type="text/css" href="../styles/font-awesome.min.css" rel="stylesheet" />
     <link type="text/css" href="../styles/base-styles.css" rel="stylesheet" />
     <link type="text/css" href="../styles/stylesheet.css" rel="stylesheet" />
