@@ -8,7 +8,7 @@
 ini_set( "display_errors", false);
 
 //Name of the dashboard instance
-define("DASHBOARD_NAME", "NOC Grid");
+define("DASHBOARD_LOCATION_NAME", "NOC Grid");
 
 //The URL path for the dashboard instance
 define("URL_PATH", $_SERVER['REQUEST_URI']);

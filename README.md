@@ -25,7 +25,7 @@ Welcome to the NOC Grid! The NOC Grid is a configurable single-page dashboard th
   * Give your NOC Grid a title:
   ```php
 //Name of the dashboard instance
-define("DASHBOARD_NAME", "NOC Grid");
+define("DASHBOARD_LOCATION_NAME", "NOC Grid");
 ```
   * Input your NetBeez hostname and API key, overwriting the placeholder values:
   ```php
